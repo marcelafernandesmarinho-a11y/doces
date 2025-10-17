@@ -1,66 +1,167 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Doce Delícia - Sua Confeitaria Online</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Doce Sonho - Doceria Artesanal</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-
-    <header>
-        <h1>Doce Delícia</h1>
-        <nav>
-            <ul>
-                <li><a href="#inicio">Início</a></li>
-                <li><a href="#produtos">Produtos</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <i class="fas fa-birthday-cake"></i>
+                    <span>Doce Sonho</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#doces">Doces</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
         </nav>
     </header>
 
-    <main>
-        <section id="inicio">
-            <h2>Bem-vindo(a) à Doce Delícia</h2>
-            <p>O lugar onde seus desejos mais doces se tornam realidade. Conheça nossos bolos, brigadeiros e sobremesas!</p>
-        </section>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Doces que Encantam o Paladar</h1>
+            <p>Feitos com amor e ingredientes frescos todos os dias</p>
+            <a href="#doces" class="btn-primary">Ver Doces</a>
+        </div>
+        <div class="hero-image">
+            <img src="images/hero-cupcake.jpg" alt="Doces Artesanais">
+        </div>
+    </section>
 
-        <section id="produtos">
-            <h2>Nossos Produtos</h2>
-            <div class="produto-card">
-                <h3>Bolo de Chocolate</h3>
-                <p>O clássico que nunca falha. Massa fofinha com recheio e cobertura de chocolate cremoso.</p>
-                <span>R$ 45,00</span>
+    <!-- Sobre -->
+    <section id="sobre" class="sobre">
+        <div class="container">
+            <h2>Sobre a Doce Sonho</h2>
+            <div class="sobre-content">
+                <div class="sobre-text">
+                    <p>Desde 2015, a Doce Sonho traz o melhor da confeitaria artesanal para sua mesa. Cada doce é preparado com carinho, usando ingredientes de primeira qualidade e receitas passadas de geração em geração.</p>
+                    <div class="stats">
+                        <div class="stat">
+                            <h3>5000+</h3>
+                            <p>Doces Vendidos</p>
+                        </div>
+                        <div class="stat">
+                            <h3>200+</h3>
+                            <p>Clientes Felizes</p>
+                        </div>
+                        <div class="stat">
+                            <h3>10</h3>
+                            <p>Anos de Experiência</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="sobre-image">
+                    <img src="images/sobre.jpg" alt="Doceria">
+                </div>
             </div>
+        </div>
+    </section>
 
-            <div class="produto-card">
-                <h3>Brigadeiro Gourmet</h3>
-                <p>Feito com chocolate belga, puro sabor e textura inigualável.</p>
-                <span>R$ 5,00 (unidade)</span>
+    <!-- Doces -->
+    <section id="doces" class="doces">
+        <div class="container">
+            <h2>Nossos Doces</h2>
+            <div class="doces-grid">
+                <div class="doce-card">
+                    <img src="images/cupcake.jpg" alt="Cupcake">
+                    <h3>Cupcakes</h3>
+                    <p>R$ 4,50/un</p>
+                    <button class="btn-secondary">Pedir</button>
+                </div>
+                <div class="doce-card">
+                    <img src="images/bolo.jpg" alt="Bolo">
+                    <h3>Bolo de Chocolate</h3>
+                    <p>R$ 45,00/kg</p>
+                    <button class="btn-secondary">Pedir</button>
+                </div>
+                <div class="doce-card">
+                    <img src="images/macaron.jpg" alt="Macaron">
+                    <h3>Macarons</h3>
+                    <p>R$ 3,00/un</p>
+                    <button class="btn-secondary">Pedir</button>
+                </div>
+                <div class="doce-card">
+                    <img src="images/brigadeiro.jpg" alt="Brigadeiro">
+                    <h3>Brigadeiros Gourmet</h3>
+                    <p>R$ 2,50/un</p>
+                    <button class="btn-secondary">Pedir</button>
+                </div>
+                <div class="doce-card">
+                    <img src="images/bemcasado.jpg" alt="Bem-casado">
+                    <h3>Bem-casados</h3>
+                    <p>R$ 1,80/un</p>
+                    <button class="btn-secondary">Pedir</button>
+                </div>
+                <div class="doce-card">
+                    <img src="images/pave.jpg" alt="Pavê">
+                    <h3>Pavê de Chocolate</h3>
+                    <p>R$ 35,00</p>
+                    <button class="btn-secondary">Pedir</button>
+                </div>
             </div>
+        </div>
+    </section>
 
-            </section>
+    <!-- Contato -->
+    <section id="contato" class="contato">
+        <div class="container">
+            <h2>Faça seu Pedido</h2>
+            <div class="contato-content">
+                <div class="contato-info">
+                    <h3>Entre em Contato</h3>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <span>(11) 99999-9999</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>contato@docesonho.com.br</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>R. Doce, 123 - SP</span>
+                    </div>
+                    <div class="social">
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+                <form class="contato-form">
+                    <input type="text" placeholder="Seu Nome" required>
+                    <input type="tel" placeholder="Telefone" required>
+                    <input type="email" placeholder="Email" required>
+                    <textarea placeholder="Seu Pedido" rows="4" required></textarea>
+                    <button type="submit" class="btn-primary">Enviar Pedido</button>
+                </form>
+            </div>
+        </div>
+    </section>
 
-        <section id="contato">
-            <h2>Faça seu Pedido!</h2>
-            <form>
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome" required>
-
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="pedido">Seu Pedido:</label>
-                <textarea id="pedido" name="pedido" rows="4" required></textarea>
-
-                <button type="submit">Enviar Pedido</button>
-            </form>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2025 Doce Delícia. Todos os direitos reservados.</p>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Doce Sonho. Todos os direitos reservados.</p>
+        </div>
     </footer>
 
-    </body>
+    <script src="js/script.js"></script>
+</body>
 </html>
+
