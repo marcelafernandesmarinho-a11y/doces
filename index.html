@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doce Delícia - Sua Confeitaria Online</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Doce Delícia</h1>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#produtos">Produtos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio">
+            <h2>Bem-vindo(a) à Doce Delícia</h2>
+            <p>O lugar onde seus desejos mais doces se tornam realidade. Conheça nossos bolos, brigadeiros e sobremesas!</p>
+        </section>
+
+        <section id="produtos">
+            <h2>Nossos Produtos</h2>
+            <div class="produto-card">
+                <h3>Bolo de Chocolate</h3>
+                <p>O clássico que nunca falha. Massa fofinha com recheio e cobertura de chocolate cremoso.</p>
+                <span>R$ 45,00</span>
+            </div>
+
+            <div class="produto-card">
+                <h3>Brigadeiro Gourmet</h3>
+                <p>Feito com chocolate belga, puro sabor e textura inigualável.</p>
+                <span>R$ 5,00 (unidade)</span>
+            </div>
+
+            </section>
+
+        <section id="contato">
+            <h2>Faça seu Pedido!</h2>
+            <form>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="pedido">Seu Pedido:</label>
+                <textarea id="pedido" name="pedido" rows="4" required></textarea>
+
+                <button type="submit">Enviar Pedido</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Doce Delícia. Todos os direitos reservados.</p>
+    </footer>
+
+    </body>
+</html>
